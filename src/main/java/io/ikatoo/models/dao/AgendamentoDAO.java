@@ -8,6 +8,9 @@ import io.ikatoo.models.Agendamento;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
-public interface AgendamentoDAO extends CrudRepository<Agendamento, Long> {
+public interface AgendamentoDAO extends CrudRepository<Agendamento, Integer> {
+    List<Agendamento> findByObservacaoIgnoreCaseContaining(String observacao);
 }

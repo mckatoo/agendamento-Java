@@ -27,7 +27,7 @@ public class ProfessorController {
 
     @GetMapping
     public ResponseEntity<Professor> listAll() {
-        return new ResponseEntity(dao.findAll(),HttpStatus.OK);
+        return new ResponseEntity(dao.findAll(), HttpStatus.OK);
     }
 
     @GetMapping(path = "/{id}")
@@ -38,9 +38,14 @@ public class ProfessorController {
         return new ResponseEntity<>(professor, HttpStatus.OK);
     }
 
+    @GetMapping(path = "/porProfessor/{professor}")
+    public ResponseEntity<?> findProfessorByProfessor(@PathVariable String professor) {
+        return new ResponseEntity<>(dao.findByProfessorIgnoreCaseContaining(professor), HttpStatus.OK);
+    }
+
     @PostMapping
     public ResponseEntity<?> save(@RequestBody Professor professor) {
-        return new ResponseEntity<>(dao.save(professor),HttpStatus.CREATED);
+        return new ResponseEntity<>(dao.save(professor), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/delete/{id}")
@@ -51,6 +56,6 @@ public class ProfessorController {
 
     @PutMapping(path = "/update")
     public ResponseEntity<?> update(@RequestBody Professor professor) {
-        return new ResponseEntity<>(dao.save(professor),HttpStatus.OK);
+        return new ResponseEntity<>(dao.save(professor), HttpStatus.OK);
     }
 }

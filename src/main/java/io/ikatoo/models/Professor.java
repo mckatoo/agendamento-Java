@@ -20,7 +20,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Professor implements Serializable {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idProfessor;

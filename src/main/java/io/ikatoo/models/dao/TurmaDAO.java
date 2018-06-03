@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public interface TurmaDAO extends CrudRepository<Turma, Long> {
-    List<Turma> findByTurma(String turma);
+public interface TurmaDAO extends CrudRepository<Turma, Integer> {
+    List<Turma> findByTurmaIgnoreCaseContaining(String turma);
 }

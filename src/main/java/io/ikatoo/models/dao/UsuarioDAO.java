@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public interface UsuarioDAO extends CrudRepository<Usuario, Long> {
-    List<Usuario> findByUsuario(String usuario);
+public interface UsuarioDAO extends CrudRepository<Usuario, Integer> {
+    List<Usuario> findByUsuarioIgnoreCaseContaining(String usuario);
 }

@@ -12,5 +12,5 @@ import java.util.List;
 
 @Component
 public interface ProfessorDAO extends CrudRepository<Professor, Integer> {
-    List<Professor> findByProfessor(String professor);
+    List<Professor> findByProfessorIgnoreCaseContaining(String professor);
 }

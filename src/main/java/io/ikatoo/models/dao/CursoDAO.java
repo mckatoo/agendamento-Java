@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public interface CursoDAO extends CrudRepository<Curso, Long> {
-    List<Curso> findByCurso(String curso);
+public interface CursoDAO extends CrudRepository<Curso, Integer> {
+    List<Curso> findByCursoIgnoreCaseContaining(String curso);
 }
