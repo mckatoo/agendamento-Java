@@ -1,16 +1,14 @@
 package io.ikatoo.controllers;
 
+import io.ikatoo.error.CustomErrorType;
 import io.ikatoo.models.Professor;
-import io.ikatoo.utils.DateUtil;
+import io.ikatoo.models.dao.ProfessorDAO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
-import static java.util.Arrays.asList;
+import java.util.Optional;
 
 /**
  * @author Milton Carlos Katoo for iKatoo on 02/06/2018.
@@ -19,12 +17,41 @@ import static java.util.Arrays.asList;
 @RestController
 @RequestMapping("professores")
 public class ProfessorController {
+
+    private final ProfessorDAO dao;
+
     @Autowired
-//    public DateUtil dateUtil;
+    public ProfessorController(ProfessorDAO dao) {
+        this.dao = dao;
+    }
 
     @GetMapping
-    public List<Professor> listAll() {
-//        System.out.println(dateUtil.formatLocalDateTimeToDatabaseStyle(LocalDateTime.now()));
-        return asList(new Professor("Milton"), new Professor("Rapadura"));
+    public ResponseEntity<Professor> listAll() {
+        return new ResponseEntity(dao.findAll(),HttpStatus.OK);
+    }
+
+    @GetMapping(path = "/{id}")
+    public ResponseEntity<?> getProfessorById(@PathVariable("id") Integer id) {
+        Optional<Professor> professor = dao.findById(id);
+        if (professor == null)
+            return new ResponseEntity<>(new CustomErrorType("Professor não encontrado"), HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>(professor, HttpStatus.OK);
+    }
+
+    @PostMapping
+    public ResponseEntity<?> save(@RequestBody Professor professor) {
+        System.out.println("-----------------"+professor);
+        return new ResponseEntity<>(dao.save(professor),HttpStatus.OK);
+    }
+
+    @DeleteMapping(path = "{/id}")
+    public ResponseEntity<?> delete(@PathVariable Integer id) {
+        dao.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PutMapping
+    public ResponseEntity<?> update(@RequestBody Professor professor) {
+        return new ResponseEntity<>(dao.save(professor),HttpStatus.OK);
     }
 }
