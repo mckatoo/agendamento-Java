@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43cea3c-71f5-4a4a-ac42-c06d1dce27c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/error/CustomErrorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/AgendamentoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/CursoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TipoUsuarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TurmaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/ProfessorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Professor.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,8 +28,8 @@
       <file leaf-file-name="ProfessorController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="47" column="60" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="60" />
+            <state relative-caret-position="383">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#704#705#0" expanded="true" />
@@ -565,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="60" />
+        <state relative-caret-position="383">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#704#705#0" expanded="true" />

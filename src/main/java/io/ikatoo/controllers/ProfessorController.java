@@ -31,7 +31,7 @@ public class ProfessorController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getProfessorById(@PathVariable("id") Integer id) {
+    public ResponseEntity<?> getProfessorById(@PathVariable Integer id) {
         Optional<Professor> professor = dao.findById(id);
         if (professor == null)
             return new ResponseEntity<>(new CustomErrorType("Professor não encontrado"), HttpStatus.NOT_FOUND);
@@ -40,17 +40,16 @@ public class ProfessorController {
 
     @PostMapping
     public ResponseEntity<?> save(@RequestBody Professor professor) {
-        System.out.println("-----------------"+professor);
-        return new ResponseEntity<>(dao.save(professor),HttpStatus.OK);
+        return new ResponseEntity<>(dao.save(professor),HttpStatus.CREATED);
     }
 
-    @DeleteMapping(path = "{/id}")
+    @DeleteMapping(path = "/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable Integer id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PutMapping
+    @PutMapping(path = "/update")
     public ResponseEntity<?> update(@RequestBody Professor professor) {
         return new ResponseEntity<>(dao.save(professor),HttpStatus.OK);
     }
