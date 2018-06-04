@@ -53,9 +53,4 @@ public class TipoUsuarioController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody TipoUsuario tipousuario) {
-        return new ResponseEntity<>(dao.save(tipousuario), HttpStatus.OK);
-    }
 }

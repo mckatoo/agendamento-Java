@@ -22,7 +22,7 @@ import javax.persistence.ManyToOne;
 public class Agendamento implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idAgendamento;
     @ManyToOne
     @JoinColumn(name = "idProfessor")
@@ -30,9 +30,6 @@ public class Agendamento implements Serializable {
     @ManyToOne
     @JoinColumn(name = "idTurma")
     private Turma turma;
-    @ManyToOne
-    @JoinColumn(name = "idCurso")
-    private Curso curso;
     private Date dia;
     private Boolean preaula;
     private Boolean primeirop;
@@ -63,14 +60,6 @@ public class Agendamento implements Serializable {
 
     public void setTurma(Turma turma) {
         this.turma = turma;
-    }
-
-    public Curso getCurso() {
-        return curso;
-    }
-
-    public void setCurso(Curso curso) {
-        this.curso = curso;
     }
 
     public Date getDia() {

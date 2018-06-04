@@ -53,9 +53,4 @@ public class CursoController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody Curso curso) {
-        return new ResponseEntity<>(dao.save(curso), HttpStatus.OK);
-    }
 }

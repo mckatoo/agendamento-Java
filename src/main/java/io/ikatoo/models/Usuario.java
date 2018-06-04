@@ -29,7 +29,7 @@ import org.hibernate.annotations.NamedQuery;
 public class Usuario implements Serializable {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idUsuario;
     private String usuario;
     private String senha;

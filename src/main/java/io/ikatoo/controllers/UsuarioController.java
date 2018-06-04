@@ -53,9 +53,4 @@ public class UsuarioController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody Usuario usuario) {
-        return new ResponseEntity<>(dao.save(usuario), HttpStatus.OK);
-    }
 }

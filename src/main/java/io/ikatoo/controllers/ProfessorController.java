@@ -53,9 +53,4 @@ public class ProfessorController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody Professor professor) {
-        return new ResponseEntity<>(dao.save(professor), HttpStatus.OK);
-    }
 }

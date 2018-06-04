@@ -53,9 +53,4 @@ public class TurmaController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody Turma turma) {
-        return new ResponseEntity<>(dao.save(turma), HttpStatus.OK);
-    }
 }

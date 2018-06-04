@@ -21,7 +21,7 @@ import javax.persistence.Id;
 public class Curso implements Serializable {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idCurso;
     private String curso;
 

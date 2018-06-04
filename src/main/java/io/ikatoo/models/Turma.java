@@ -29,7 +29,7 @@ import org.hibernate.annotations.NamedQuery;
 public class Turma implements Serializable {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idTurma;
     @ManyToOne
     @JoinColumn(name = "idCurso")

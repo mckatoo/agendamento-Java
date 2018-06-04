@@ -21,7 +21,7 @@ import javax.persistence.Id;
 public class TipoUsuario implements Serializable {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idTipoUsuario;
     private String tipo;
     private Integer nivel;

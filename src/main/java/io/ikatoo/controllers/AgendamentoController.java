@@ -53,9 +53,4 @@ public class AgendamentoController {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-
-    @PutMapping(path = "/update")
-    public ResponseEntity<?> update(@RequestBody Agendamento agendamento) {
-        return new ResponseEntity<>(dao.save(agendamento), HttpStatus.OK);
-    }
 }
