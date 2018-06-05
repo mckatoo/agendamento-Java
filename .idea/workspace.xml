@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43cea3c-71f5-4a4a-ac42-c06d1dce27c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/error/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modeloDB.architect" beforeDir="false" afterPath="$PROJECT_DIR$/modeloDB.architect" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/CursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/CursoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TurmaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TurmaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,27 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AgendamentoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java">
+      <file leaf-file-name="ProfessorController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="680">
+              <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#744#745#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Agendamento.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -116,12 +93,13 @@
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/UsuarioController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/CursoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TurmaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/error/ResourceNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" />
       </list>
     </option>
   </component>
@@ -144,6 +122,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -229,7 +208,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,24 +312,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="744" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32941177" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32963374" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35462186" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35405105" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26439393" />
-      <window_info anchor="bottom" id="Problems" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2673426" />
+      <window_info anchor="bottom" id="Problems" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -362,15 +341,38 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.32963374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -505,16 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TipoUsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -586,16 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -624,6 +606,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/error/ResourceNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -632,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="456">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#646#647#0" expanded="true" />
@@ -644,10 +653,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="680">
+          <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

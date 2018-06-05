@@ -1,6 +1,6 @@
 package io.ikatoo.controllers;
 
-import io.ikatoo.error.CustomErrorType;
+import io.ikatoo.error.ResourceNotFoundException;
 import io.ikatoo.models.Agendamento;
 import io.ikatoo.models.dao.AgendamentoDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,8 +33,8 @@ public class AgendamentoController {
     @GetMapping(path = "/{id}")
     public ResponseEntity<?> getAgendamentoById(@PathVariable Integer id) {
         Optional<Agendamento> agendamento = dao.findById(id);
-        if (agendamento == null)
-            return new ResponseEntity<>(new CustomErrorType("Agendamento não encontrado"), HttpStatus.NOT_FOUND);
+        if (!agendamento.isPresent())
+            throw new ResourceNotFoundException("Agendamento não encontrado para id:" + id);
         return new ResponseEntity<>(agendamento, HttpStatus.OK);
     }
 
