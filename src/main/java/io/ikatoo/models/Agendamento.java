@@ -7,6 +7,7 @@ package io.ikatoo.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -22,11 +23,11 @@ public class Agendamento implements Serializable {
     private Integer idAgendamento;
     @ManyToOne
     @JoinColumn(name = "idProfessor")
-    @NotEmpty
+    @NotNull
     private Professor professor;
     @ManyToOne
     @JoinColumn(name = "idTurma")
-    @NotEmpty
+    @NotNull
     private Turma turma;
     @NotEmpty
     private Date dia;

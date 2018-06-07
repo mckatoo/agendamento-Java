@@ -11,6 +11,7 @@ import org.hibernate.annotations.NamedQuery;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -37,6 +38,7 @@ public class Usuario implements Serializable {
     private String email;
     @ManyToOne
     @JoinColumn(name = "idTipoUsuario")
+    @NotNull
     private TipoUsuario tipoUsuario;
 
     public Integer getIdUsuario() {

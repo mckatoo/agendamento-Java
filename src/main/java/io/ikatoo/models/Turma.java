@@ -10,6 +10,7 @@ import org.hibernate.annotations.NamedQuery;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -30,7 +31,7 @@ public class Turma implements Serializable {
     private Integer idTurma;
     @ManyToOne
     @JoinColumn(name = "idCurso")
-    @NotEmpty
+    @NotNull
     private Curso curso;
     @NotEmpty
     private String turma;
