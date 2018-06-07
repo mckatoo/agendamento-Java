@@ -6,8 +6,11 @@ import io.ikatoo.models.dao.TipoUsuarioDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 /**
@@ -44,11 +47,13 @@ public class TipoUsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody TipoUsuario tipousuario) {
+    @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
+    public ResponseEntity<?> save(@Valid @RequestBody TipoUsuario tipousuario) {
         return new ResponseEntity<>(dao.save(tipousuario), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/delete/{id}")
+    @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public ResponseEntity<?> delete(@PathVariable Integer id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);

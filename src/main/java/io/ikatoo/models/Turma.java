@@ -5,15 +5,12 @@
  */
 package io.ikatoo.models;
 
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import java.io.Serializable;
 
 
 /**
@@ -33,7 +30,9 @@ public class Turma implements Serializable {
     private Integer idTurma;
     @ManyToOne
     @JoinColumn(name = "idCurso")
+    @NotEmpty
     private Curso curso;
+    @NotEmpty
     private String turma;
 
     public Integer getIdturma() {

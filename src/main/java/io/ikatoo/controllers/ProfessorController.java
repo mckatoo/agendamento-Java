@@ -6,7 +6,11 @@ import io.ikatoo.models.dao.ProfessorDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 import java.util.Optional;
 
 /**
@@ -43,11 +47,13 @@ public class ProfessorController {
     }
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody Professor professor) {
+    @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
+    public ResponseEntity<?> save(@Valid @RequestBody Professor professor) {
         return new ResponseEntity<>(dao.save(professor), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/delete/{id}")
+    @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public ResponseEntity<?> delete(@PathVariable Integer id) {
         verifyIfProfessorExists(id);
         dao.deleteById(id);

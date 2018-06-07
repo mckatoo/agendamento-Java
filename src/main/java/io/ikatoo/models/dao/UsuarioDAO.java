@@ -13,4 +13,5 @@ import java.util.List;
 @Component
 public interface UsuarioDAO extends CrudRepository<Usuario, Integer> {
     List<Usuario> findByUsuarioIgnoreCaseContaining(String usuario);
+    List<Usuario> findByEmailIgnoreCaseContaining(String email);
 }
