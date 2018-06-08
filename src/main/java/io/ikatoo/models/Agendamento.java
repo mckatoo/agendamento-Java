@@ -5,14 +5,11 @@
  */
 package io.ikatoo.models;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 /**
  *
@@ -26,10 +23,13 @@ public class Agendamento implements Serializable {
     private Integer idAgendamento;
     @ManyToOne
     @JoinColumn(name = "idProfessor")
+    @NotNull
     private Professor professor;
     @ManyToOne
     @JoinColumn(name = "idTurma")
+    @NotNull
     private Turma turma;
+    @NotEmpty
     private Date dia;
     private Boolean preaula;
     private Boolean primeirop;

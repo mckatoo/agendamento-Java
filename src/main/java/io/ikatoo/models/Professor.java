@@ -5,12 +5,11 @@
  */
 package io.ikatoo.models;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 
 /**
@@ -24,7 +23,12 @@ public class Professor implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idProfessor;
+    @NotEmpty
     private String professor;
+    @ManyToOne
+    @JoinColumn(name = "idUsuario")
+    @NotNull
+    private Usuario usuario;
 
     public Integer getIdProfessor() {
         return idProfessor;
@@ -40,6 +44,14 @@ public class Professor implements Serializable {
 
     public void setProfessor(String professor) {
         this.professor = professor;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     @Override

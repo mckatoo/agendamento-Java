@@ -5,19 +5,17 @@
  */
 package io.ikatoo.models;
 
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
 
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import java.io.Serializable;
+
 
 /**
- *
  * @author mckatoo
  */
 
@@ -27,14 +25,20 @@ import org.hibernate.annotations.NamedQuery;
                 query = "SELECT u from Usuario u where u.tipoUsuario.idTipoUsuario = :id")
 )
 public class Usuario implements Serializable {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idUsuario;
+    @NotEmpty
     private String usuario;
+    @NotEmpty
     private String senha;
+    @Email
+    @NotEmpty
+    private String email;
     @ManyToOne
     @JoinColumn(name = "idTipoUsuario")
+    @NotNull
     private TipoUsuario tipoUsuario;
 
     public Integer getIdUsuario() {
@@ -69,4 +73,11 @@ public class Usuario implements Serializable {
         this.tipoUsuario = tipoUsuario;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }
