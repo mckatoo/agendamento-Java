@@ -1,6 +1,6 @@
 package io.ikatoo.error;
 
-public class ValidationErrorDetails extends ErrorDetail {
+public class ValidationErrorDetails extends ErrorDetails {
     private String field;
     private String fieldMessage;
 
