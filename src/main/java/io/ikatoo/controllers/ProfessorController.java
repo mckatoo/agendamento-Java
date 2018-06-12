@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +38,9 @@ public class ProfessorController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getProfessorById(@PathVariable Integer id) {
+    public ResponseEntity<?> getProfessorById(@PathVariable Integer id,
+                                              @AuthenticationPrincipal UserDetails userDetails) {
+        System.out.println(userDetails);
         verifyIfProfessorExists(id);
         Optional<Professor> professor = dao.findById(id);
         return new ResponseEntity<>(professor, HttpStatus.OK);
@@ -54,6 +59,7 @@ public class ProfessorController {
     }
 
     @DeleteMapping(path = "/delete/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public ResponseEntity<?> delete(@PathVariable Integer id) {
         verifyIfProfessorExists(id);
