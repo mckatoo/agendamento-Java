@@ -38,7 +38,7 @@ public class ProfessorController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getProfessorById(@PathVariable Integer id,
+    public ResponseEntity<?> getProfessorById(@PathVariable Long id,
                                               @AuthenticationPrincipal UserDetails userDetails) {
         System.out.println(userDetails);
         verifyIfProfessorExists(id);
@@ -61,13 +61,13 @@ public class ProfessorController {
     @DeleteMapping(path = "/delete/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         verifyIfProfessorExists(id);
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    private void verifyIfProfessorExists(Integer id) {
+    private void verifyIfProfessorExists(Long id) {
         if (!dao.findById(id).isPresent())
             throw new ResourceNotFoundException("Professor com id: " + id + " não encontrado.");
     }

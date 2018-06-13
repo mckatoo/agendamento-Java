@@ -5,10 +5,7 @@
  */
 package io.ikatoo.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
@@ -25,6 +22,7 @@ public class Curso implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idCurso;
     @NotEmpty
+    @Column(unique = true)
     private String curso;
 
     public Integer getIdCurso() {

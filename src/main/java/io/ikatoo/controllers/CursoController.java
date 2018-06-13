@@ -34,7 +34,7 @@ public class CursoController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getCursoById(@PathVariable Integer id) {
+    public ResponseEntity<?> getCursoById(@PathVariable Long id) {
         Optional<Curso> curso = dao.findById(id);
         if (curso == null)
             return new ResponseEntity<>(new CustomErrorType("Curso não encontrado"), HttpStatus.NOT_FOUND);
@@ -54,7 +54,7 @@ public class CursoController {
 
     @DeleteMapping(path = "/delete/{id}")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

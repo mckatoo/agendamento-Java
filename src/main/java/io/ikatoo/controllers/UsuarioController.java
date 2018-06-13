@@ -34,7 +34,7 @@ public class UsuarioController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getUsuarioById(@PathVariable Integer id) {
+    public ResponseEntity<?> getUsuarioById(@PathVariable Long id) {
         Optional<Usuario> usuario = dao.findById(id);
         if (usuario == null)
             return new ResponseEntity<>(new CustomErrorType("Usuario não encontrado"), HttpStatus.NOT_FOUND);
@@ -59,7 +59,7 @@ public class UsuarioController {
 
     @DeleteMapping(path = "/delete/{id}")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

@@ -24,6 +24,7 @@ public class Professor implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idProfessor;
     @NotEmpty
+    @Column(unique = true)
     private String professor;
     @ManyToOne
     @JoinColumn(name = "idUsuario")

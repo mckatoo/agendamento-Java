@@ -5,12 +5,12 @@ package io.ikatoo.models.dao;
  */
 
 import io.ikatoo.models.Curso;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public interface CursoDAO extends CrudRepository<Curso, Integer> {
+public interface CursoDAO extends PagingAndSortingRepository<Curso, Long> {
     List<Curso> findByCursoIgnoreCaseContaining(String curso);
 }

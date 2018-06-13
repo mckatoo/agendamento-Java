@@ -34,7 +34,7 @@ public class TurmaController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getTurmaById(@PathVariable Integer id) {
+    public ResponseEntity<?> getTurmaById(@PathVariable Long id) {
         Optional<Turma> turma = dao.findById(id);
         if (turma == null)
             return new ResponseEntity<>(new CustomErrorType("Turma não encontrado"), HttpStatus.NOT_FOUND);
@@ -54,7 +54,7 @@ public class TurmaController {
 
     @DeleteMapping(path = "/delete/{id}")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

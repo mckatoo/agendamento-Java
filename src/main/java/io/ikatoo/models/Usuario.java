@@ -5,6 +5,7 @@
  */
 package io.ikatoo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.NamedQueries;
 import org.hibernate.annotations.NamedQuery;
 
@@ -30,11 +31,14 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idUsuario;
     @NotEmpty
+    @Column(unique = true)
     private String usuario;
     @NotEmpty
+    @JsonIgnore
     private String senha;
     @Email
     @NotEmpty
+    @Column(unique = true)
     private String email;
     @ManyToOne
     @JoinColumn(name = "idTipoUsuario")

@@ -34,6 +34,7 @@ public class Turma implements Serializable {
     @NotNull
     private Curso curso;
     @NotEmpty
+    @Column(unique = true)
     private String turma;
 
     public Integer getIdturma() {

@@ -34,7 +34,7 @@ public class AgendamentoController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getAgendamentoById(@PathVariable Integer id) {
+    public ResponseEntity<?> getAgendamentoById(@PathVariable Long id) {
         Optional<Agendamento> agendamento = dao.findById(id);
         if (!agendamento.isPresent())
             throw new ResourceNotFoundException("Agendamento não encontrado para id:" + id);
@@ -54,7 +54,7 @@ public class AgendamentoController {
 
     @DeleteMapping(path = "/delete/{id}")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

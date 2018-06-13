@@ -18,7 +18,7 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("tipousuario")
+@RequestMapping("Long")
 public class TipoUsuarioController {
 
     private final TipoUsuarioDAO dao;
@@ -34,27 +34,27 @@ public class TipoUsuarioController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<?> getTipoUsuarioById(@PathVariable Integer id) {
-        Optional<TipoUsuario> tipousuario = dao.findById(id);
-        if (tipousuario == null)
+    public ResponseEntity<?> getTipoUsuarioById(@PathVariable Long id) {
+        Optional<TipoUsuario> Long = dao.findById(id);
+        if (Long == null)
             return new ResponseEntity<>(new CustomErrorType("TipoUsuario não encontrado"), HttpStatus.NOT_FOUND);
-        return new ResponseEntity<>(tipousuario, HttpStatus.OK);
+        return new ResponseEntity<>(Long, HttpStatus.OK);
     }
 
-    @GetMapping(path = "/porTipoUsuario/{tipousuario}")
-    public ResponseEntity<?> findTipoUsuarioByTipoUsuario(@PathVariable String tipousuario) {
-        return new ResponseEntity<>(dao.findByTipoIgnoreCaseContaining(tipousuario), HttpStatus.OK);
+    @GetMapping(path = "/porTipoUsuario/{Long}")
+    public ResponseEntity<?> findTipoUsuarioByTipoUsuario(@PathVariable String Long) {
+        return new ResponseEntity<>(dao.findByTipoIgnoreCaseContaining(Long), HttpStatus.OK);
     }
 
     @PostMapping
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> save(@Valid @RequestBody TipoUsuario tipousuario) {
-        return new ResponseEntity<>(dao.save(tipousuario), HttpStatus.CREATED);
+    public ResponseEntity<?> save(@Valid @RequestBody TipoUsuario Long) {
+        return new ResponseEntity<>(dao.save(Long), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/delete/{id}")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> delete(@PathVariable Integer id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         dao.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

@@ -5,10 +5,7 @@
  */
 package io.ikatoo.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
@@ -27,6 +24,7 @@ public class TipoUsuario implements Serializable {
     @NotEmpty
     private String tipo;
     @NotEmpty
+    @Column(unique = true)
     private Integer nivel;
 
     public Integer getIdTipoUsuario() {
