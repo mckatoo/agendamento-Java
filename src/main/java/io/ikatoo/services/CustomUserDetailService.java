@@ -12,11 +12,11 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
-public class CusterUserDetailService implements UserDetailsService {
+public class CustomUserDetailService implements UserDetailsService {
     private final UsuarioDAO dao;
 
     @Autowired
-    public CusterUserDetailService(UsuarioDAO dao) {
+    public CustomUserDetailService(UsuarioDAO dao) {
         this.dao = dao;
     }
 
@@ -24,9 +24,11 @@ public class CusterUserDetailService implements UserDetailsService {
     public UserDetails loadUserByUsername(String usuario) throws UsernameNotFoundException {
         Usuario usuarios = Optional.ofNullable(dao.findByUsuario(usuario))
                 .orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado."));
-        List<GrantedAuthority> authorityListAdmin = AuthorityUtils.createAuthorityList(dao.);
-        List<GrantedAuthority> authorityListProfessores = AuthorityUtils.createAuthorityList();
+        List<GrantedAuthority> authorityListAdministrador = AuthorityUtils
+                .createAuthorityList(String.valueOf(AuthorityUtils.createAuthorityList(String.valueOf(dao.findByTipoUsuario("administrador")))));
+        List<GrantedAuthority> authorityListProfessor = AuthorityUtils
+                .createAuthorityList(String.valueOf(AuthorityUtils.createAuthorityList(String.valueOf(dao.findByTipoUsuario("professor")))));
         return new org.springframework.security.core.userdetails.User
-                (usuarios.getUsuario(),usuarios.getSenha(), usuarios.getTipoUsuario().getTipo() = "administrador" ? authorityListAdmin : authorityListProfessores);
+                (usuarios.getUsuario(), usuarios.getSenha(), usuarios.getTipoUsuario().getTipo().equals("administrador") ? authorityListAdministrador : authorityListProfessor);
     }
 }

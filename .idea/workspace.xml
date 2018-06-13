@@ -2,46 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43cea3c-71f5-4a4a-ac42-c06d1dce27c2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CusterUserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/utils/PasswordEncoder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agendamento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/agendamento.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/CursoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/CursoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/ProfessorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TurmaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TurmaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/AgendamentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/AgendamentoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/CursoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/CursoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TipoUsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TipoUsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TurmaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/TurmaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/AgendamentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/AgendamentoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/CursoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/CursoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/ProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/ProfessorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TipoUsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TipoUsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TurmaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TurmaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/UsuarioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Curso.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Curso.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/TipoUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/TipoUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Turma.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Turma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/AgendamentoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/AgendamentoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/CursoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/CursoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/ProfessorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/ProfessorDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/TipoUsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/TipoUsuarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/TurmaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/TurmaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/dao/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CusterUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/config/SecurityConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,34 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsuarioDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java">
+      <file leaf-file-name="CustomUserDetailService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/services/CustomUserDetailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="31" column="174" selection-start-line="31" selection-start-column="174" selection-end-line="31" selection-end-column="174" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PasswordEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/utils/PasswordEncoder.java">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CusterUserDetailService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/services/CusterUserDetailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -154,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/handler/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/adapter/AgendamentosAdapter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Turma.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java" />
@@ -174,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CusterUserDetailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -196,9 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,25 +204,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ikatoo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agendamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agendamento" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ikatoo" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agendamento" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agendamento" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ikatoo" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,6 +219,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,52 +345,45 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1050" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="DB Browser" order="14" weight="0.32963374" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3288889" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.25971144" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.25882354" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2128788" />
       <window_info anchor="bottom" id="Problems" order="13" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2588047" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32852387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32963374" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32852387" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="DB Browser" order="14" weight="0.32963374" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Agendamento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -585,7 +509,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/adapter/AgendamentosAdapter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -705,13 +628,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/utils/PasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/utils/PasswordEncoder.java" />
     <entry file="jar:///opt/jdk/src.zip!/java/util/function/Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -719,54 +636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/consoles/local">
-      <provider selected="true" editor-type-id="0.CONSOLE">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" current-schema="information_schema" session-id="MAIN">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/session_browsers/local Sessions">
-      <provider selected="true" editor-type-id="0.SESSION_BROWSER">
-        <state>
-          <refresh-interval value="0" />
-          <sorting />
-          <filter>
-            <user value="mckatoo" />
-            <host value="" />
-            <status value="" />
-          </filter>
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/usuario">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_usuario" position="0" visible="true" />
-            <column name="usuario" position="1" visible="true" />
-            <column name="senha" position="2" visible="true" />
-            <column name="id_tipo_usuario" position="3" visible="true" />
-            <column name="email" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/tipo_usuario">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_tipo_usuario" position="0" visible="true" />
-            <column name="tipo" position="1" visible="true" />
-            <column name="nivel" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/consoles/local" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/session_browsers/local Sessions" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/usuario" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/tipo_usuario" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
@@ -776,20 +649,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/UsuarioDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/services/CusterUserDetailService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/services/CustomUserDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="174" selection-start-line="31" selection-start-column="174" selection-end-line="31" selection-end-column="174" />
         </state>
       </provider>
     </entry>
