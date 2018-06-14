@@ -20,7 +20,7 @@ public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idAgendamento;
+    private Long idAgendamento;
     @ManyToOne
     @JoinColumn(name = "idProfessor")
     @NotNull
@@ -38,11 +38,11 @@ public class Agendamento implements Serializable {
     private Boolean amplificador;
     private String observacao;
 
-    public Integer getIdagendamento() {
+    public Long getIdagendamento() {
         return idAgendamento;
     }
 
-    public void setIdagendamento(Integer idagendamento) {
+    public void setIdagendamento(Long idagendamento) {
         this.idAgendamento = idagendamento;
     }
 

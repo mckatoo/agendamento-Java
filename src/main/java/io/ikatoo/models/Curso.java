@@ -20,16 +20,16 @@ public class Curso implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idCurso;
+    private Long idCurso;
     @NotEmpty
     @Column(unique = true)
     private String curso;
 
-    public Integer getIdCurso() {
+    public Long getIdCurso() {
         return idCurso;
     }
 
-    public void setIdCurso(Integer idCurso) {
+    public void setIdCurso(Long idCurso) {
         this.idCurso = idCurso;
     }
 

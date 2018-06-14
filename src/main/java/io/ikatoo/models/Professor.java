@@ -22,7 +22,7 @@ public class Professor implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idProfessor;
+    private Long idProfessor;
     @NotEmpty
     @Column(unique = true)
     private String professor;
@@ -31,11 +31,11 @@ public class Professor implements Serializable {
     @NotNull
     private Usuario usuario;
 
-    public Integer getIdProfessor() {
+    public Long getIdProfessor() {
         return idProfessor;
     }
 
-    public void setIdProfessor(Integer idProfessor) {
+    public void setIdProfessor(Long idProfessor) {
         this.idProfessor = idProfessor;
     }
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc">
-        <schema name="pg_catalog" object-types="function, table, view" />
+        <schema name="pg_catalog" object-types="function, sequence, table, view" />
         <schema name="public" object-types="column, constraint, function, index, sequence, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
@@ -39,7 +39,7 @@
     <connection id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.usuario" active-filter-id="65bcc45e-23ce-42f3-8bec-839758c1c5d1">
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.usuario" active-filter-id="">
       <filter id="65bcc45e-23ce-42f3-8bec-839758c1c5d1" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id_usuario" operator="=" value="" active="true" />
       </filter>

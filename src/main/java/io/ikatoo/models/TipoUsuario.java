@@ -20,18 +20,18 @@ public class TipoUsuario implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idTipoUsuario;
+    private Long idTipoUsuario;
     @NotEmpty
     private String tipo;
     @NotEmpty
     @Column(unique = true)
-    private Integer nivel;
+    private Long nivel;
 
-    public Integer getIdTipoUsuario() {
+    public Long getIdTipoUsuario() {
         return idTipoUsuario;
     }
 
-    public void setIdTipoUsuario(Integer idTipoUsuario) {
+    public void setIdTipoUsuario(Long idTipoUsuario) {
         this.idTipoUsuario = idTipoUsuario;
     }
 
@@ -43,11 +43,11 @@ public class TipoUsuario implements Serializable {
         this.tipo = tipo;
     }
 
-    public Integer getNivel() {
+    public Long getNivel() {
         return nivel;
     }
 
-    public void setNivel(Integer nivel) {
+    public void setNivel(Long nivel) {
         this.nivel = nivel;
     }
     

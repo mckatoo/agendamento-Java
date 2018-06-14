@@ -29,7 +29,7 @@ public class Usuario implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idUsuario;
+    private Long idUsuario;
     @NotEmpty
     @Column(unique = true)
     private String usuario;
@@ -45,11 +45,11 @@ public class Usuario implements Serializable {
     @NotNull
     private TipoUsuario tipoUsuario;
 
-    public Integer getIdUsuario() {
+    public Long getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(Integer idUsuario) {
+    public void setIdUsuario(Long idUsuario) {
         this.idUsuario = idUsuario;
     }
 

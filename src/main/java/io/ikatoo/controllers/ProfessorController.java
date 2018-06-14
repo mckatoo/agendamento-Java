@@ -40,7 +40,6 @@ public class ProfessorController {
     @GetMapping(path = "/{id}")
     public ResponseEntity<?> getProfessorById(@PathVariable Long id,
                                               @AuthenticationPrincipal UserDetails userDetails) {
-        System.out.println(userDetails);
         verifyIfProfessorExists(id);
         Optional<Professor> professor = dao.findById(id);
         return new ResponseEntity<>(professor, HttpStatus.OK);
@@ -59,7 +58,7 @@ public class ProfessorController {
     }
 
     @DeleteMapping(path = "/delete/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('administrador')")
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public ResponseEntity<?> delete(@PathVariable Long id) {
         verifyIfProfessorExists(id);

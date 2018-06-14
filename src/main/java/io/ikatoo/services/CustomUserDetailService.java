@@ -8,10 +8,16 @@ import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Milton Carlos Katoo for iKatoo on 02/06/2018.
+ */
+
+@Component
 public class CustomUserDetailService implements UserDetailsService {
     private final UsuarioDAO dao;
 
@@ -22,13 +28,16 @@ public class CustomUserDetailService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String usuario) throws UsernameNotFoundException {
-        Usuario usuarios = Optional.ofNullable(dao.findByUsuario(usuario))
+        Usuario user = Optional.ofNullable(dao.findByUsuario(usuario))
                 .orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado."));
-        List<GrantedAuthority> authorityListAdministrador = AuthorityUtils
-                .createAuthorityList(String.valueOf(AuthorityUtils.createAuthorityList(String.valueOf(dao.findByTipoUsuario("administrador")))));
-        List<GrantedAuthority> authorityListProfessor = AuthorityUtils
-                .createAuthorityList(String.valueOf(AuthorityUtils.createAuthorityList(String.valueOf(dao.findByTipoUsuario("professor")))));
-        return new org.springframework.security.core.userdetails.User
-                (usuarios.getUsuario(), usuarios.getSenha(), usuarios.getTipoUsuario().getTipo().equals("administrador") ? authorityListAdministrador : authorityListProfessor);
+        List<GrantedAuthority> authorityListAdministrador = AuthorityUtils.createAuthorityList("ROLE_"+user.getTipoUsuario().getTipo());
+        List<GrantedAuthority> authorityListProfessor = AuthorityUtils.createAuthorityList("ROLE_"+user.getTipoUsuario().getTipo());
+//        List<GrantedAuthority> authorityListAdministrador = AuthorityUtils.createAuthorityList("ROLE_PROFESSOR", "ROLE_ADMINISTRADOR");
+//        List<GrantedAuthority> authorityListProfessor = AuthorityUtils.createAuthorityList("ROLE_PROFESSOR");
+        System.out.println(user.getTipoUsuario().getTipo().equals("administrador"));
+        return new org.springframework.security.core.userdetails.User(
+                user.getUsuario(),
+                user.getSenha(),
+                user.getTipoUsuario().getTipo().equals("administrador") ? authorityListAdministrador : authorityListProfessor);
     }
 }
