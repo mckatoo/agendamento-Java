@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43cea3c-71f5-4a4a-ac42-c06d1dce27c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modeloDB.architect" beforeDir="false" afterPath="$PROJECT_DIR$/modeloDB.architect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agendamento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/agendamento.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/AgendamentoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/models/TipoUsuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ikatoo/services/CustomUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/AgendamentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/AgendamentoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TipoUsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/controllers/TipoUsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/models/TipoUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/models/TipoUsuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/services/CustomUserDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/services/CustomUserDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/ikatoo/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/ikatoo/config/SecurityConfig.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,26 +27,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="256">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Usuario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java">
+      <file leaf-file-name="JWTAuthenticationFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthenticationFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="511">
+              <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
               <folding>
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#1600#1601#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JWTAuthorizationFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthorizationFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityConstants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -58,6 +83,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -118,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/error/ErrorDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/handler/RestExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/adapter/AgendamentosAdapter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/AgendamentoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/CursoDAO.java" />
@@ -141,6 +166,10 @@
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/utils/PasswordEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConstants.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthorizationFilter.java" />
       </list>
     </option>
   </component>
@@ -237,8 +266,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,16 +391,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1050" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="DB Browser" order="14" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32852387" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3288889" />
       <window_info anchor="right" id="Maven Projects" order="3" />
@@ -380,7 +406,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21931697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22651514" />
       <window_info anchor="bottom" id="Problems" order="13" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -388,40 +414,22 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="DB Execution Console" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32852387" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32963374" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32852387" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="DB Browser" order="14" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32963374" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/CursosDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/AgendamentosDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Professor.java">
@@ -491,13 +499,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/adapter/AgendamentosAdapter.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/dao/ProfessorDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -613,68 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/professor">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="34" readonly="false">
-          <columns>
-            <column name="id_professor" position="0" visible="true" />
-            <column name="professor" position="1" visible="true" />
-            <column name="id_usuario" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/turma">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="3" readonly="false">
-          <columns>
-            <column name="id_turma" position="0" visible="true" />
-            <column name="id_curso" position="1" visible="true" />
-            <column name="turma" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/usuario">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_usuario" position="0" visible="true" />
-            <column name="usuario" position="1" visible="true" />
-            <column name="senha" position="2" visible="true" />
-            <column name="id_tipo_usuario" position="3" visible="true" />
-            <column name="email" position="4" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/agendamento">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="0" readonly="false">
-          <columns>
-            <column name="id_agendamento" position="0" visible="true" />
-            <column name="id_professor" position="1" visible="true" />
-            <column name="id_turma" position="2" visible="true" />
-            <column name="id_curso" position="3" visible="false" />
-            <column name="dia" position="4" visible="true" />
-            <column name="preaula" position="5" visible="true" />
-            <column name="primeirop" position="6" visible="true" />
-            <column name="segundop" position="7" visible="true" />
-            <column name="datashow" position="8" visible="true" />
-            <column name="amplificador" position="9" visible="true" />
-            <column name="observacao" position="10" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/professor" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/turma" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/usuario" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/agendamento" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/controllers/TipoUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -728,33 +671,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/tipo_usuario">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="2" readonly="false">
-          <columns>
-            <column name="id_tipo_usuario" position="0" visible="true" />
-            <column name="tipo" position="1" visible="true" />
-            <column name="nivel" position="2" visible="true" />
-          </columns>
-          <sorting />
-          <content-types />
-        </state>
-      </provider>
-    </entry>
-    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/curso">
-      <provider selected="true" editor-type-id="1.DATA">
-        <state row-count="1" readonly="false">
-          <columns>
-            <column name="id_curso" position="0" visible="true" />
-            <column name="curso" position="1" visible="true" />
-          </columns>
-          <sorting>
-            <column name="curso" index="1" direction="DESCENDING" />
-          </sorting>
-          <content-types />
-        </state>
-      </provider>
-    </entry>
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/tipo_usuario" />
+    <entry file="db://18608285-fff0-4d49-b6b7-e8a0a98bbbbc/objects/schemas/public/tables/curso" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -771,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/models/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="391">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#1228#1229#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
@@ -784,8 +702,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="256">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/SecurityConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="49" column="63" lean-forward="true" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/ikatoo/config/JWTAuthorizationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
