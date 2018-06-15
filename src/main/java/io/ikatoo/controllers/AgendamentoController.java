@@ -49,7 +49,12 @@ public class AgendamentoController {
     @PostMapping
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
     public ResponseEntity<?> save(@Valid @RequestBody Agendamento agendamento) {
-        return new ResponseEntity<>(dao.save(agendamento), HttpStatus.CREATED);
+        /*SE TIVER ID quer dizer que é atualização, então
+         VERIFICAR SE O id_professor é igual ao do usuario/professor atual
+         e se não for admin ou for o mesmo professor prossegue com o SAVE*/
+        @Valid Agendamento action = agendamento.getIdagendamento() != null ? dao.save(agendamento) : null;
+        HttpStatus status = agendamento.getIdagendamento() != null ? HttpStatus.CREATED : HttpStatus.UNAUTHORIZED;
+        return new ResponseEntity<>(action, status);
     }
 
     @DeleteMapping(path = "/delete/{id}")

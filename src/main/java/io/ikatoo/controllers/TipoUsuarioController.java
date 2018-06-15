@@ -18,7 +18,7 @@ import java.util.Optional;
  */
 
 @RestController
-@RequestMapping("Long")
+@RequestMapping("tipousuario")
 public class TipoUsuarioController {
 
     private final TipoUsuarioDAO dao;
@@ -35,21 +35,21 @@ public class TipoUsuarioController {
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<?> getTipoUsuarioById(@PathVariable Long id) {
-        Optional<TipoUsuario> Long = dao.findById(id);
-        if (Long == null)
+        Optional<TipoUsuario> tipousuario = dao.findById(id);
+        if (tipousuario == null)
             return new ResponseEntity<>(new CustomErrorType("TipoUsuario não encontrado"), HttpStatus.NOT_FOUND);
-        return new ResponseEntity<>(Long, HttpStatus.OK);
+        return new ResponseEntity<>(tipousuario, HttpStatus.OK);
     }
 
-    @GetMapping(path = "/porTipoUsuario/{Long}")
-    public ResponseEntity<?> findTipoUsuarioByTipoUsuario(@PathVariable String Long) {
-        return new ResponseEntity<>(dao.findByTipoIgnoreCaseContaining(Long), HttpStatus.OK);
+    @GetMapping(path = "/porTipoUsuario/{tipousuario}")
+    public ResponseEntity<?> findTipoUsuarioByTipoUsuario(@PathVariable String tipousuario) {
+        return new ResponseEntity<>(dao.findByTipoIgnoreCaseContaining(tipousuario), HttpStatus.OK);
     }
 
     @PostMapping
     @Transactional(propagation=Propagation.REQUIRED,readOnly=false)
-    public ResponseEntity<?> save(@Valid @RequestBody TipoUsuario Long) {
-        return new ResponseEntity<>(dao.save(Long), HttpStatus.CREATED);
+    public ResponseEntity<?> save(@Valid @RequestBody TipoUsuario tipousuario) {
+        return new ResponseEntity<>(dao.save(tipousuario), HttpStatus.CREATED);
     }
 
     @DeleteMapping(path = "/delete/{id}")

@@ -1,0 +1,1361 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-06-15T01:46:56.395Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_8d0e4930553a43f6a6665b7775683247",
+			"created": 1514912472198,
+			"description": "",
+			"modified": 1514912472198,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "wrk_8d38f3a2a3144c42aafe073e977748ea",
+			"created": 1515107671558,
+			"description": "",
+			"modified": 1515107671558,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_5c89861b0c9b40acb3f06140931b4363",
+			"color": null,
+			"created": 1514912472313,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1514912472313,
+			"name": "New Environment",
+			"parentId": "wrk_8d0e4930553a43f6a6665b7775683247",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_b41ae23c9b0e482ba08a0a595ff9f3ca",
+			"cookies": [
+				{
+					"creation": "2018-06-12T22:23:55.298Z",
+					"domain": "localhost",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "7439789363332321",
+					"key": "JSESSIONID",
+					"lastAccessed": "2018-06-15T01:29:57.641Z",
+					"path": "/",
+					"value": "06957362D2C520701564EB22E27E37D4"
+				}
+			],
+			"created": 1514912474061,
+			"modified": 1529026197641,
+			"name": "Default Jar",
+			"parentId": "wrk_8d0e4930553a43f6a6665b7775683247",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"created": 1514913564347,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1514913564347,
+			"modified": 1514913564346,
+			"name": "criptoport",
+			"parentId": "wrk_8d0e4930553a43f6a6665b7775683247",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"created": 1522551497331,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1522551497331,
+			"modified": 1522551497331,
+			"name": "agendamentoJava",
+			"parentId": "wrk_8d0e4930553a43f6a6665b7775683247",
+			"_type": "request_group"
+		},
+		{
+			"_id": "env_3734894c60b84798abc826e5be6f5753",
+			"color": null,
+			"created": 1515107671595,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1515107671595,
+			"name": "New Environment",
+			"parentId": "wrk_8d38f3a2a3144c42aafe073e977748ea",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_bd72337e24f44d32866fbd15563b3fb4",
+			"cookies": [],
+			"created": 1515107671652,
+			"modified": 1515107671652,
+			"name": "Default Jar",
+			"parentId": "wrk_8d38f3a2a3144c42aafe073e977748ea",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_c6691fb5696d44a0a9a06d4ae55adb7b",
+			"created": 1515107780468,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1515107780468,
+			"modified": 1515107780468,
+			"name": "criptoport",
+			"parentId": "wrk_8d38f3a2a3144c42aafe073e977748ea",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_a214fa97c4744b27a67c8a2455e53908",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": []
+			},
+			"created": 1514913583500,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_e762a8ee058548d5834ed654232ba877",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1514913583501,
+			"method": "POST",
+			"modified": 1514914333491,
+			"name": "POST",
+			"parameters": [
+				{
+					"id": "pair_71dae740e353429caa157c6764e9e31b",
+					"name": "nome",
+					"value": "teste3"
+				},
+				{
+					"id": "pair_7d950a0ebb6c4bc88b1063ae25172304",
+					"name": "senha",
+					"value": "senha3"
+				}
+			],
+			"parentId": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c0e662c82c054d24985fdedbaca9093d",
+			"authentication": {},
+			"body": {},
+			"created": 1514913639900,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1514913583551,
+			"method": "GET",
+			"modified": 1514913671341,
+			"name": "GET",
+			"parameters": [],
+			"parentId": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2080e96a3bdc4ac8a6945311348b1c86",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"disabled": true,
+						"id": "pair_1b97c0d7f07448b1a6e07c8585acb67c",
+						"name": "id",
+						"value": "7"
+					}
+				]
+			},
+			"created": 1514913958477,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_7ae71ef1b22a4e66ba97b36149dc9e58",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1514913958477,
+			"method": "DELETE",
+			"modified": 1514918262817,
+			"name": "DELETE",
+			"parameters": [
+				{
+					"disabled": false,
+					"id": "pair_70c8ad51e552486e8e1646acffbcb4f7",
+					"name": "id",
+					"value": "5"
+				}
+			],
+			"parentId": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7dc109b910284064890b5ffbac4c9589",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/x-www-form-urlencoded",
+				"params": [
+					{
+						"disabled": true,
+						"id": "pair_1b97c0d7f07448b1a6e07c8585acb67c",
+						"name": "id",
+						"value": "7"
+					}
+				]
+			},
+			"created": 1514918279928,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_7ae71ef1b22a4e66ba97b36149dc9e58",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1514913771014,
+			"method": "PUT",
+			"modified": 1514918335178,
+			"name": "PUT",
+			"parameters": [
+				{
+					"disabled": false,
+					"id": "pair_70c8ad51e552486e8e1646acffbcb4f7",
+					"name": "id",
+					"value": "8"
+				},
+				{
+					"id": "pair_b63f95734ff247f1b0ae4bc98871fb0c",
+					"name": "nome",
+					"value": "nome8"
+				},
+				{
+					"id": "pair_391cadf6308e42c7a87676923febcb65",
+					"name": "senha",
+					"value": "senha8"
+				}
+			],
+			"parentId": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_321c1904f851441eb04d28ea4043d119",
+			"authentication": {},
+			"body": {},
+			"created": 1514920974286,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1514913583526,
+			"method": "GET",
+			"modified": 1514930258176,
+			"name": "GET  com parametro",
+			"parameters": [
+				{
+					"id": "pair_40a22b8f8dec4782adcda42695fcae7f",
+					"name": "nome",
+					"value": "nome"
+				}
+			],
+			"parentId": "fld_52fd2ccbd8294d808f36dedcbc3018b9",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_4b20cd2807fb4f72a3b05058b2686d6e",
+			"created": 1525031820081,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1525031820081,
+			"modified": 1525031820081,
+			"name": "Professores",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_3cf1c44015204bb38fad9373019062f7",
+			"created": 1525032014186,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1523791658706,
+			"modified": 1525032027579,
+			"name": "Cursos",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_35248717a7b7470cb739c7fc8edd69b5",
+			"created": 1525032437860,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1523171578018.5,
+			"modified": 1525032447292,
+			"name": "Turmas",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_d79a5aa1f86d447bb6f002ac3165cf9d",
+			"created": 1525034596291,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1522861537674.75,
+			"modified": 1525034611953,
+			"name": "Agendamentos",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_1aefa8ff26174baf99338647d3aa2c93",
+			"created": 1528069426414,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1522706517502.875,
+			"modified": 1528069440707,
+			"name": "TipoUsuario",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_973bd1d147644b13a53ace1fa67a17ed",
+			"created": 1528069677422,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1523016557846.625,
+			"modified": 1528069691108,
+			"name": "Usuarios",
+			"parentId": "fld_d03ce2aaba5a478fadaba885955a4521",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_eb167c1eb6de499b8b570e5d7418c4b7",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": []
+			},
+			"created": 1515107795707,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1238ac1b9c27430682e6139a99100480",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1515107795707,
+			"method": "POST",
+			"modified": 1515111784827,
+			"name": "cadastrar",
+			"parameters": [
+				{
+					"id": "pair_7d90533923444ca1959308a5270ab93c",
+					"name": "nome",
+					"value": "lasdjfklsjd"
+				},
+				{
+					"id": "pair_380d8adb26ce49438b0a0baed79adc8f",
+					"name": "senha",
+					"value": "lasdjflkjsdaf"
+				}
+			],
+			"parentId": "fld_c6691fb5696d44a0a9a06d4ae55adb7b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a54c82595e8e4031b5f8d446803a55f8",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": []
+			},
+			"created": 1515107872584,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1238ac1b9c27430682e6139a99100480",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1515107795657,
+			"method": "DELETE",
+			"modified": 1515107896411,
+			"name": "deletar",
+			"parameters": [
+				{
+					"id": "pair_04144a07e56643c3aa512daa8230f54a",
+					"name": "id",
+					"value": "14"
+				}
+			],
+			"parentId": "fld_c6691fb5696d44a0a9a06d4ae55adb7b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_807e01f15ecf4a0b9b5c2013590895b2",
+			"authentication": {},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": []
+			},
+			"created": 1515123837306,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1238ac1b9c27430682e6139a99100480",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1515107795682,
+			"method": "GET",
+			"modified": 1515123867576,
+			"name": "GET",
+			"parameters": [],
+			"parentId": "fld_c6691fb5696d44a0a9a06d4ae55adb7b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/criptoport/usuariocontroller",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4376441004d1446483cfa1286ff22f66",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\t\"professor\": \"TESTE14\",\n\t\t\"usuario\": {\n\t\t\t\"idUsuario\": 14\n\t\t}\n\t}"
+			},
+			"created": 1522551510027,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1528678741403,
+			"name": "professoresPOST",
+			"parameters": [],
+			"parentId": "fld_4b20cd2807fb4f72a3b05058b2686d6e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/professores/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_38eac64a281c41788e6491941f69ad31",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1522551921374,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_646ebdc76f54412291d8666ef05f7e55",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1528936749523,
+			"name": "professoresGET",
+			"parameters": [],
+			"parentId": "fld_4b20cd2807fb4f72a3b05058b2686d6e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/professores",
+			"_type": "request"
+		},
+		{
+			"_id": "req_957fd4e7d03740a0b8304b6cb7aee5df",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "danieln"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1522553113366,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1528938045417,
+			"name": "professoresDELETE",
+			"parameters": [],
+			"parentId": "fld_4b20cd2807fb4f72a3b05058b2686d6e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/professores/delete/3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e90af5fc2b634e5eaf370ba6ad52418e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "\t{\n\t\t\"curso\": \"Ciência da Computação\"\n\t}"
+			},
+			"created": 1525032014189,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1529020254110,
+			"name": "cursosPOST",
+			"parameters": [],
+			"parentId": "fld_3cf1c44015204bb38fad9373019062f7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/cursos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5e86b37fdf6e455c80862c49eb72f0d8",
+			"authentication": {},
+			"body": {},
+			"created": 1525032014191,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1528069412961,
+			"name": "cursosGET",
+			"parameters": [],
+			"parentId": "fld_3cf1c44015204bb38fad9373019062f7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/cursos/",
+			"_type": "request"
+		},
+		{
+			"_id": "req_43bfcd41198a4547855ab91e6de97f54",
+			"authentication": {},
+			"body": {},
+			"created": 1525032014198,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1525032194597,
+			"name": "cursosDELETE",
+			"parameters": [],
+			"parentId": "fld_3cf1c44015204bb38fad9373019062f7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/agendamentoBackend/rest/cursos/38",
+			"_type": "request"
+		},
+		{
+			"_id": "req_613f500f0d4d4faeb41daf52211bc071",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"curso\": {\n\t\t\"idCurso\": 4\n\t},\n\t\"turma\": \"2° Semestre\"\n}"
+			},
+			"created": 1525032437949,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1529020476483,
+			"name": "turmasPOST",
+			"parameters": [],
+			"parentId": "fld_35248717a7b7470cb739c7fc8edd69b5",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/turmas",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0dc3826700d4425c9215074d7d5f8fe7",
+			"authentication": {
+				"disabled": false,
+				"password": "1234",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {},
+			"created": 1525032437971,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1528842333048,
+			"name": "turmasGET",
+			"parameters": [],
+			"parentId": "fld_35248717a7b7470cb739c7fc8edd69b5",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/turmas",
+			"_type": "request"
+		},
+		{
+			"_id": "req_118677dd73f946d7a63ca6b9aabcc2c6",
+			"authentication": {},
+			"body": {},
+			"created": 1525032437974,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1525032491603,
+			"name": "turmasDELETE",
+			"parameters": [],
+			"parentId": "fld_35248717a7b7470cb739c7fc8edd69b5",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/agendamentoBackend/rest/turmas/38",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d477cfaa914d463ba70d5dea8cea0684",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"professor\": {\n\t\t\"id_professor\": 11\n\t},\n\t\"turma\": {\n\t\t\"idturma\": 13\n\t},\n\t\"curso\": {\n\t\t\"idcurso\": 12\n\t},\n\t\"dia\": 1527649200000,\n\t\"preaula\": true,\n\t\"primeirop\": true,\n\t\"segundop\": true,\n\t\"datashow\": true,\n\t\"amplificador\": true,\n\t\"observacao\": \"TESTE CAO CAPOS TTET\"\n}"
+			},
+			"created": 1525034596295,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				},
+				{
+					"disabled": true,
+					"id": "pair_52889cde3c124824866034b81e031193",
+					"name": "observacao",
+					"value": "sdfasdfasdf"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1529016628693,
+			"name": "agendamentosPOST",
+			"parameters": [],
+			"parentId": "fld_d79a5aa1f86d447bb6f002ac3165cf9d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/agendamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_dac62970d3d64571887f7f8c85c2b13e",
+			"authentication": {},
+			"body": {},
+			"created": 1525034596298,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1528068787002,
+			"name": "agendamentosGET",
+			"parameters": [],
+			"parentId": "fld_d79a5aa1f86d447bb6f002ac3165cf9d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/agendamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a979960a8f7c47f29cc77412e6dbfe87",
+			"authentication": {},
+			"body": {},
+			"created": 1525034596303,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1525034797425,
+			"name": "agendamentosDELETE",
+			"parameters": [],
+			"parentId": "fld_d79a5aa1f86d447bb6f002ac3165cf9d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/agendamentoBackend/rest/agendamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cc441d1e1de249ecb1ea84056d4afac7",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"tipo\": \"professor\",\n\t\"nivel\": 1\n}"
+			},
+			"created": 1528069426417,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				},
+				{
+					"disabled": true,
+					"id": "pair_52889cde3c124824866034b81e031193",
+					"name": "observacao",
+					"value": "sdfasdfasdf"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1529020038521,
+			"name": "tipousuarioPOST",
+			"parameters": [],
+			"parentId": "fld_1aefa8ff26174baf99338647d3aa2c93",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/tipousuario",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ac66b485ff04458d8cc105661fb78c86",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {},
+			"created": 1528069426419,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_17474abb7af44abeb759f0ef5a12c20c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1529019513553,
+			"name": "tipousuarioGET",
+			"parameters": [],
+			"parentId": "fld_1aefa8ff26174baf99338647d3aa2c93",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/tipousuario",
+			"_type": "request"
+		},
+		{
+			"_id": "req_483fc67d33c24514af8103a48411b739",
+			"authentication": {},
+			"body": {},
+			"created": 1528069426421,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1528069489293,
+			"name": "tipousuarioDELETE",
+			"parameters": [],
+			"parentId": "fld_1aefa8ff26174baf99338647d3aa2c93",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8084/agendamentoBackend/rest/agendamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b2a93443bb30444c9a2a90eca1ebc607",
+			"authentication": {
+				"disabled": false,
+				"password": "1234",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"usuario\": \"danieln\",\n\t\"senha\": \"1111\",\n\t\"email\": \"danieln@gmail.com\",\n\t\"tipoUsuario\": {\n\t\t\"idTipoUsuario\": 2\n\t}\n}"
+			},
+			"created": 1528069677425,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_224314c1c41c4178ae56168c76ccb096",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": true,
+					"id": "pair_77d7d9a1c25a4073b480fc46d8ae0fd1",
+					"name": "segundop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_7c088f95f5fb462eb47cfdb723ea3923",
+					"name": "amplificador",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_d0750d831bd0402f8169bef1a8497974",
+					"name": "idTurma",
+					"value": "2"
+				},
+				{
+					"disabled": true,
+					"id": "pair_15b16c0a600749cf817b92008a50469b",
+					"name": "dProfessor",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_05539684642b424fa0af64ac743f8b94",
+					"name": "primeirop",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_0a0c27e47737497e840202cee64a5ebd",
+					"name": "datashow",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_113645ed423d4df8a707d05e7a5ce8fc",
+					"name": "preaula",
+					"value": "true"
+				},
+				{
+					"disabled": true,
+					"id": "pair_64330ad9db8f43c3b5a2070f7db8b020",
+					"name": "idCurso",
+					"value": "1"
+				},
+				{
+					"disabled": true,
+					"id": "pair_e7f5ec0368dd406db50247d40dc2ea2e",
+					"name": "dia",
+					"value": "978314400000"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906286,
+			"method": "POST",
+			"modified": 1529026254196,
+			"name": "usuariosPOST",
+			"parameters": [],
+			"parentId": "fld_973bd1d147644b13a53ace1fa67a17ed",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/usuarios",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5dcdf811c14b4b0f86b0831adccc7f29",
+			"authentication": {
+				"disabled": false,
+				"password": "1111",
+				"type": "basic",
+				"username": "mckatoo"
+			},
+			"body": {},
+			"created": 1528069677428,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1525031906186,
+			"method": "GET",
+			"modified": 1529019429740,
+			"name": "usuariosGET",
+			"parameters": [],
+			"parentId": "fld_973bd1d147644b13a53ace1fa67a17ed",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/usuarios",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b33b093ccc4446189ed06df7ed0fa63a",
+			"authentication": {},
+			"body": {},
+			"created": 1528069677431,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_50bcbca122364f8aa6e0e97439f5fdcc",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1525031906136,
+			"method": "DELETE",
+			"modified": 1528335846476,
+			"name": "usuariosDELETE",
+			"parameters": [],
+			"parentId": "fld_973bd1d147644b13a53ace1fa67a17ed",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:8080/usuarios/delete/2",
+			"_type": "request"
+		}
+	]
+}

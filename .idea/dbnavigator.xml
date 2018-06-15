@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc">
-        <schema name="pg_catalog" object-types="function, sequence, table, view" />
+        <schema name="pg_catalog" object-types="function" />
         <schema name="public" object-types="column, constraint, function, index, sequence, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
@@ -39,16 +39,20 @@
     <connection id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.usuario" active-filter-id="">
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.curso" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.usuario" active-filter-id="EMPTY_FILTER">
       <filter id="65bcc45e-23ce-42f3-8bec-839758c1c5d1" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id_usuario" operator="=" value="" active="true" />
       </filter>
     </filter-list>
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.agendamento" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.turma" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.tipo_usuario" active-filter-id="f8ca1cec-1a0b-4d4b-8b7f-2b22004d978b">
       <filter id="f8ca1cec-1a0b-4d4b-8b7f-2b22004d978b" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id_tipo_usuario" operator="=" value="" active="true" />
       </filter>
     </filter-list>
+    <filter-list connection-id="18608285-fff0-4d49-b6b7-e8a0a98bbbbc" dataset="public.professor" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers>
@@ -112,7 +116,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />

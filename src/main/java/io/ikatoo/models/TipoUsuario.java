@@ -7,6 +7,7 @@ package io.ikatoo.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 
@@ -23,7 +24,7 @@ public class TipoUsuario implements Serializable {
     private Long idTipoUsuario;
     @NotEmpty
     private String tipo;
-    @NotEmpty
+    @NotNull
     @Column(unique = true)
     private Long nivel;
 
